@@ -30,11 +30,10 @@ Now we want to setup the database. In this guide we will do it via the terminal.
 >mysql -u root -p
 ```
 
-Put your password to login as root user.
-
-Now when you are logged into MySQL insert following commands one by one:
+Make sure you are logged in as the root user and put your password. 
 
 ```sql
+mysql> mysql -u root -p
 mysql> CREATE DATABASE kitchenguard;
 mysql> USE kitchenguard;
 mysql> CREATE TABLE kitchenguard(  
@@ -124,6 +123,6 @@ example@pi:~$ cd /opt/zigbee && npm start
 ```
 In another terminal window run: 
 ```console
-example@pi:~$ cd KitchenGuard/src
+example@pi:~$ cd kitchenguard/Python
 example@pi:~$ python3 SPMain.py
 ```
