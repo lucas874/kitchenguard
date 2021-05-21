@@ -123,6 +123,6 @@ example@pi:~$ cd /opt/zigbee && npm start
 ```
 In another terminal window run: 
 ```console
-example@pi:~$ cd KitchenGuard/src
+example@pi:~$ cd KitchenGuard/Python
 example@pi:~$ python3 SPMain.py
 ```
