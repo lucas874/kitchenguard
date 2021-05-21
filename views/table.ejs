@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Data Overview</title>
+
+  <link href="/assets/main.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="table-data">
+<h2 style = "position:relative; left:20px;">Data Overview</h2>
+<hr/>
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>occupancy</th>
+    </tr>
+    
+    <%
+    if(userData.length!=0){
+    var i=1;
+    userData.forEach(function(data){%>
+    <tr>
+    
+    <%  if(data._read != 0){%>
+        <td><%=i; %></td>
+        <td><%=data.start %></td>
+        <td><%=data.stop %></td>
+
+
+    
+    <% } else { %>
+    
+        <td><b><%=i; %></b></td>
+        <td><%=data.start %></td>
+        <td><%=data.stop %></td>
+
+
+    
+    <% } %>
+    </tr> 
+    <%  i++; }) %>
+    <% } else{ %>
+        <tr>
+            <td colspan="7">No Data Found</td>
+        </tr>
+    <% } %>
+</table>
+    </div>
+</body>
+</html>
