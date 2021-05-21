@@ -30,10 +30,11 @@ Now we want to setup the database. In this guide we will do it via the terminal.
 >mysql -u root -p
 ```
 
-Make sure you are logged in as the root user and put your password. 
+Put your password for the root user. 
+
+Your should now be logged in to MySQL, next insert follwing commands one by one:
 
 ```sql
-mysql> mysql -u root -p
 mysql> CREATE DATABASE kitchenguard;
 mysql> USE kitchenguard;
 mysql> CREATE TABLE kitchenguard(  
