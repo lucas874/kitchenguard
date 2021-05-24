@@ -120,7 +120,7 @@ example@pi:~$ pip3 install transitions
 The RaspberryPi should now be configured to run the SafePasta KitchenGuard system. To run it open a terminal and issue:
 
 ```console
-example@pi:~$ cd /opt/zigbee && npm start
+example@pi:~$ cd /opt/zigbee2mqtt && npm start
 ```
 In another terminal window run: 
 ```console
