@@ -73,7 +73,6 @@ client.on('message', function (topic, message) {
       }
       //res.status(200).send('success 1')
   })
-  client.end()
 })
 
 /*
