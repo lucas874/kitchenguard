@@ -91,7 +91,7 @@ example@pi:~$ git clone https://github.com/MaltheT/KitchenGuard.git
 The number of physical devices may vary, but the friendly names should be LED1, LED2, ... LEDn and PIR1, PIR2, ... PIRn. The power sensor should be named NEO. In the file /opt/zigbee/data/configuration.yaml there are fields for friendly names of known zigbee devices. Change these names with any text editor. Example of how this could be done: 
 
 ```console
-example@pi:~$ cd /opt/zigbee/data
+example@pi:~$ cd /opt/zigbee2mqtt/data
 example@pi:~$ sudo nano configuration.yaml
 ```
 The local IPv4 address for the host running server should be known. To do this go the machine running the server. On Windows one can learn this address by opening a console and running 
