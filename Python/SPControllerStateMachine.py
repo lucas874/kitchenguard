@@ -83,7 +83,7 @@ class ControllerStateMachine:
         print("Current state: ", self.state)  # Log current state to console
 
     def blink_led(self, times : int):
-        for i in times: # Blink a number of times by sending publishing "ON" and "OFF" messages.
+        for i in range(times+1): # Blink a number of times by sending publishing "ON" and "OFF" messages.
             self.__z2m_client.change_state(self.last_pir.LED_friend, "ON")
             time.sleep(1)
             self.__z2m_client.change_state(self.last_pir.LED_friend, "OFF")
