@@ -6,8 +6,6 @@ const bodyParser = require('body-parser');
 var mqtt = require('mqtt');
 var client = mqtt.connect('mqtt://127.0.0.1:1883');
 
-
-// app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 app.set('view engine', 'ejs');
 app.use('/assets', express.static('assets'));
